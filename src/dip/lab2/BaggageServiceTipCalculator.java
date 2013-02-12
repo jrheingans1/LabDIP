@@ -1,14 +1,10 @@
 package dip.lab2;
 
 
-public class BaggageServiceTipCalculator {
+public class BaggageServiceTipCalculator implements ServiceTipCalculator {
     private double min = 0.00;
     private double max = 100.00;
    
-    private double good = 0.20;
-    private double fair = 0.15;
-    private double poor = 0.10;
-
     private double baseTipPerBag;
     private int bagCount;
     public enum ServiceQuality {
@@ -73,5 +69,7 @@ public class BaggageServiceTipCalculator {
         }
         this.baseTipPerBag = baseTipPerBag;
     }
-
+    public double getTipAmount(){
+    return 
+}
 }
